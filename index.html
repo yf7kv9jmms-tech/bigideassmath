@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Magma</title>
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Magma opens blocked sites right in your browser. Type an address and go. No downloads, no sign-ups."
+		/>
+		<meta name="keywords" content="Proxy, Unblocker, Magma" />
+		<meta property="og:image" content="assets/logo-256.png" />
+		<link rel="stylesheet" href="assets/fonts/fonts.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/themes.css" />
+		<script>
+			// Pre-animation state only when Motion will run; static page otherwise.
+			if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+				document.documentElement.classList.add('anim');
+			}
+		</script>
+		<script src="assets/js/particles.min.js"></script>
+	</head>
+
+	<body style="overflow: hidden">
+		<div class="failtoast">
+			<div class="failtoast-content">
+				<span class="material-symbols-outlined fail">error</span>
+				<div class="failmessage">
+					<span class="failtext text-1" id="text-1">Failed</span>
+					<span class="failtext text-2" id="text-2"
+						>Something went wrong. Please try again.</span
+					>
+				</div>
+			</div>
+			<span class="material-symbols-outlined failclose">close</span>
+			<div class="failprogress"></div>
+		</div>
+		<ul class="navbar">
+			<li style="margin-left: -1px; margin-top: 2px">
+				<a href="index.html"
+					><img class="logo" src="assets/logo.png" alt="Magma logo"
+				/></a>
+			</li>
+			<hr style="margin-top: 5px" />
+			<li>
+				<a href="index.html"
+					><span
+						id="navactive"
+						style="margin-top: 0px"
+						class="material-symbols-outlined"
+						>cottage</span
+					></a
+				>
+			</li>
+			<li>
+				<a href="proxy.html"
+					><span class="material-symbols-outlined">public</span></a
+				>
+			</li>
+			<hr />
+			<li>
+				<a href="settings.html"
+					><span
+						style="margin-top: 0"
+						class="material-symbols-outlined"
+						>tune</span
+					></a
+				>
+			</li>
+		</ul>
+		<div class="header hero">
+			<h1 data-anim>Blocked? Not anymore.</h1>
+			<p data-anim>
+				Open any site your school blocks, right in this tab. Games,
+				videos, whatever. Type an address and go. No downloads. No
+				sign-ups.
+			</p>
+			<a class="btn btn-hero" data-anim href="proxy.html">
+				Get unblocked<span
+					aria-hidden="true"
+					class="material-symbols-outlined btn-arrow"
+					>arrow_forward</span
+				>
+			</a>
+		</div>
+		<div style="z-index: -998">
+			<div class="blob"></div>
+			<div class="blobbig"></div>
+			<div class="blobsmall"></div>
+			<div class="blobtop"></div>
+			<div style="z-index: -999; position: fixed" id="particles-js"></div>
+		</div>
+		<script>
+			particlesJS('particles-js', {
+				particles: {
+					number: {
+						value: 86,
+						density: {
+							enable: true,
+							value_area: 800
+						}
+					},
+					color: {
+						value: '#ffffff'
+					},
+					shape: {
+						type: 'circle',
+						stroke: {
+							width: 0,
+							color: '#000000'
+						},
+						polygon: {
+							nb_sides: 5
+						},
+						image: {
+							src: 'img/github.svg',
+							width: 100,
+							height: 100
+						}
+					},
+					opacity: {
+						value: 1,
+						random: true,
+						anim: {
+							enable: false,
+							speed: 1,
+							opacity_min: 0.1,
+							sync: false
+						}
+					},
+					size: {
+						value: 2,
+						random: true,
+						anim: {
+							enable: false,
+							speed: 40,
+							size_min: 0.1,
+							sync: false
+						}
+					},
+					line_linked: {
+						enable: false,
+						distance: 150,
+						color: '#ffffff',
+						opacity: 0.4,
+						width: 1
+					},
+					move: {
+						enable: true,
+						speed: 0.5,
+						direction: 'top',
+						random: false,
+						straight: false,
+						out_mode: 'out',
+						bounce: false,
+						attract: {
+							enable: false,
+							rotateX: 318.0130544358847,
+							rotateY: 556.5228452627983
+						}
+					}
+				},
+				interactivity: {
+					detect_on: 'window',
+					events: {
+						onhover: {
+							enable: false,
+							mode: 'repulse'
+						},
+						onclick: {
+							enable: true,
+							mode: 'push'
+						},
+						resize: true
+					},
+					modes: {
+						grab: {
+							distance: 400,
+							line_linked: {
+								opacity: 1
+							}
+						},
+						bubble: {
+							distance: 400,
+							size: 40,
+							duration: 2,
+							opacity: 8,
+							speed: 3
+						},
+						repulse: {
+							distance: 200,
+							duration: 0.4
+						},
+						push: {
+							particles_nb: 10
+						},
+						remove: {
+							particles_nb: 10
+						}
+					}
+				},
+				retina_detect: true
+			});
+		</script>
+		<script src="js/motion.js"></script>
+		<script src="js/home.js"></script>
+		<script src="js/c.js"></script>
+		<script src="js/themes.js"></script>
+</body>
+</html>

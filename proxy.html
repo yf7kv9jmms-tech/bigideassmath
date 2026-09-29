@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Magma — Proxy unavailable</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="assets/fonts/fonts.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/themes.css" />
+    </head>
+
+    <body style="overflow: hidden">
+
+    <div class="failtoast">
+        <div class="failtoast-content">
+            <span class="material-symbols-outlined fail">error</span>
+            <div class="failmessage">
+                <span class="failtext text-1" id="text-1">Failed</span>
+                <span class="failtext text-2" id="text-2">
+                    Something went wrong. Please try again.
+                </span>
+            </div>
+        </div>
+        <span class="material-symbols-outlined failclose">close</span>
+        <div class="failprogress"></div>
+    </div>
+
+
+    <ul class="navbar">
+        <li style="margin-left: -1px; margin-top: 2px">
+            <a href="index.html">
+                <img class="logo" src="assets/logo.png" alt="Magma logo" />
+            </a>
+        </li>
+        <hr style="margin-top: 5px" />
+        <li>
+            <a href="index.html">
+                <span
+                    style="margin-top: 0px"
+                    class="material-symbols-outlined">cottage</span>
+            </a>
+        </li>
+        <li>
+            <a href="proxy.html">
+                <span id="navactive"
+                    class="material-symbols-outlined">public</span>
+            </a>
+        </li>
+        <hr />
+        <li>
+            <a href="settings.html">
+                <span
+                    style="margin-top: 0"
+                    class="material-symbols-outlined">tune</span>
+            </a>
+        </li>
+    </ul>
+
+        <main class="header hero">
+            <h1>Proxy service unavailable</h1>
+            <p>The downloaded archive contains the landing page but not the server-side proxy required to unblock external sites. This static copy preserves the interface, but the proxy cannot run from local files alone.</p>
+            <a class="btn btn-hero" href="index.html">
+                Back to home
+                <span aria-hidden="true"
+                    class="material-symbols-outlined btn-arrow">
+                    arrow_forward
+                </span>
+            </a>
+        </main>
+        <div style="z-index: -998">
+            <div class="blob"></div>
+            <div class="blobbig"></div>
+            <div class="blobsmall"></div>
+            <div class="blobtop"></div>
+        </div>
+
+    <script src="js/c.js"></script>
+    <script src="js/themes.js"></script>
+</body>
+</html>
